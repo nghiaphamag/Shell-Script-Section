@@ -21,7 +21,7 @@ read -p 'Input a user name is: ' USER_NAME
 read -p 'Input a real name here: ' COMMENT
 
 # Get the password.
-read -p 'Input your password: ' PASSWORD
+read -s -p 'Input your password: ' PASSWORD
 
 # Create the user with the password.
 useradd -c "${COMMENT}" -m ${USER_NAME}
